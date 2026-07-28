@@ -7,7 +7,7 @@ export async function GET() {
   const siteUrl = getSiteUrl();
 
   const lines = [
-    "# Aashish Jaini - Portfolio",
+   "# Aditya Pawar - Portfolio",
     "",
     "## Person",
     `Name: ${portfolioProfile.name}`,
@@ -31,12 +31,21 @@ export async function GET() {
     `Backend: ${portfolioProfile.skills.backend.join(", ")}`,
     `Tools and Technologies: ${portfolioProfile.skills.toolsAndTechnologies.join(", ")}`,
     "",
-    "## Work Experience",
-    ...portfolioProfile.workExperience.flatMap((work, index) => [
-      `${index + 1}. ${work.title} at ${work.company} (${work.period})`,
-      `   ${work.description}`,
-      work.link ? `   Link: ${work.link}` : "",
-    ]),
+   "## Work Experience",
+...(("workExperience" in portfolioProfile
+  ? portfolioProfile.workExperience
+  : []
+) as Array<{
+  title: string;
+  company: string;
+  period: string;
+  description: string;
+  link?: string;
+}>).flatMap((work, index) => [
+  `${index + 1}. ${work.title} at ${work.company} (${work.period})`,
+  `   ${work.description}`,
+  work.link ? `   Link: ${work.link}` : "",
+]),
     "",
     "## Projects",
     ...allProjects.flatMap((project, index) => [

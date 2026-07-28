@@ -65,6 +65,7 @@ export const portfolioProfile = {
       "AWS",
     ],
   },
+    workExperience: [],
   // workExperience: [
   //   {
   //     title: "Data Science Engineer ",
@@ -126,6 +127,7 @@ export const allProjects: PortfolioProject[] = [
     gradient_via: "#28418f",
     gradient_to: "#14235c",
   },
+  
   // {
   //   title: "Vercel Clone: Cloud Deployment Platform with CI/CD Magic",
   //   projectHeading: "Vercel Clone",
