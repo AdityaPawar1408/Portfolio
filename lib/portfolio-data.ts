@@ -128,32 +128,35 @@ export const allProjects: PortfolioProject[] = [
     gradient_to: "#14235c",
   },
   
-  // {
-  //   title: "Vercel Clone: Cloud Deployment Platform with CI/CD Magic",
-  //   projectHeading: "Vercel Clone",
-  //   description:
-  //     "A simplified clone of Vercel's deployment platform with CI/CD capabilities.",
-  //   imageUrl: "demo.mp4",
-  //   features: [
-  //     "Developed a Vercel-like deployment platform with a user-friendly UI for seamless project uploads via Git repos.",
-  //     "Designed a deployment pipeline where projects are stored in AWS S3, built using dynamic environment detection, and served via cloud storage.",
-  //     "Implemented automatic CI/CD with Redis-backed queues for real-time build tracking and deployment updates.",
-  //   ],
-  //   techstack: {
-  //     AWS: "aws-icon.webp",
-  //     Redis: "redis-icon.png",
-  //     TypeScript: "typescript-icon.svg",
-  //     ExpressJS: "express-icon.png",
-  //     Vite: "vite-icon.webp",
-  //     TailwindCSS: "tailwind-icon.svg",
-  //   },
-  //   projectUrl: "https://github.com/Aashish17405/Vercel-Clone",
-  //   githubUrl: "https://github.com/Aashish17405/Vercel-Clone",
-  //   theme: "#dc2626",
-  //   gradient_from: "#f87171",
-  //   gradient_via: "#dc2626",
-  //   gradient_to: "#7f1d1d",
-  // },
+  {
+    title: "CROPCARE: AI-Powered Crop Disease Detection & Advisory System",
+    projectHeading: "CROPCARE",
+    description:
+      "An AI-powered system for detecting crop diseases and providing advisory support.",
+    imageUrl: "cropcare.jpeg",
+    features: [
+      "Upload image or capture using camera for disease detection.",
+    "Deep Learning model (VGG16 – TensorFlow/Keras) ",
+      " Disease prediction with confidence (%)",
+      " Severity level detection (Low / Moderate / High)",
+      " Disease-specific recommendations & prevention tips",
+      "Scan history stored in database",
+    ],
+    techstack: {
+      Python: "python.png",
+      Django: "django.png",
+      TensorFlow: "tensorflow.png",
+      CNN: "cnn.png",
+      SQLite : "SQLite.png",
+      TailwindCSS: "tailwind-icon.svg",
+    },
+    // projectUrl: "https://github.com/Aashish17405/Vercel-Clone",
+    githubUrl: "https://github.com/AdityaPawar1408/Crop-Disease-Detction",
+    theme: "#dc2626",
+    gradient_from: "#f87171",
+    gradient_via: "#dc2626",
+    gradient_to: "#7f1d1d",
+  },
   // {
   //   title:
   //     "SiteEase: Accessibility-First Chrome Extension for Inclusive Browsing",
